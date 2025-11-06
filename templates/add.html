@@ -1,0 +1,15 @@
+{% extends "base.html" %}{% block content %}
+<h2>Add Device</h2>
+<form method="post">
+<div class="row g-3">
+<div class="col-md-3"><input name="name" placeholder="Name" class="form-control" required></div>
+<div class="col-md-2">
+<select name="type" class="form-select"><option>WLC</option><option>ISE</option><option>Switch</option></select>
+</div>
+<div class="col-md-3"><input name="ip" placeholder="IP" class="form-control" required></div>
+<div class="col-md-2"><input name="user" value="backup" class="form-control"></div>
+<div class="col-md-2"><input name="pass" type="password" placeholder="Password" class="form-control" required></div>
+</div>
+<button class="btn btn-primary mt-3">Add</button>
+</form>
+{% endblock %}

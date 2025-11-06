@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block content %}
+<h2>Backup Files</h2>
+<ul class="list-group">
+{% for f in files %}
+<li class="list-group-item d-flex justify-content-between">
+{{ f }}
+<a href="/download/{{ f }}" class="btn btn-sm btn-outline-primary">Download</a>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
